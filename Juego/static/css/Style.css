@@ -1,0 +1,90 @@
+body{
+	background: gray url("img/Background.png") repeat;
+}
+
+.header a{
+	color: blue;
+	text-decoration: none;
+}
+.header{
+	color: blue;
+	padding: 2rem 0;
+	top:0;
+	right: 0;
+
+}
+.logo-nav-container{
+	background-color: rgba(105, 105, 105, 0.3) ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.Navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.Navigation ul li{
+	display: inline-block;
+	margin: 1rem;
+}	
+.Navigation ul li a{
+	color: green;
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: all 1s ease-out;
+	border-radius: 5px;
+}
+.logo{
+	font-family: impact;
+	font-size: 24px;
+}
+
+.container{
+	margin-top: 5rem;
+}
+.car-img{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 350px;
+}
+
+.container{
+	width: 600px;
+	height: 600px;
+	background-color: rgba(105, 105, 105, 0.3);	
+
+}
+.Introduction{
+	color:white;
+}
+footer{
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+	background-color: rgba(105, 105, 105, 0.3);	
+
+}
+.register{
+	background-color: rgba(105, 105, 105, 0.3);	
+	margin:100px;
+	margin-left: 300px;
+	margin-right: 300px;
+	color: white;
+
+}
+.Login{
+	background-color: rgba(105, 105, 105, 0.3);	
+	margin:100px;
+	margin-left: 300px;
+	margin-right: 300px;
+	color: white;
+}
+.container_post{
+	width: 600px;
+	height: 600px;
+	background-color: rgba(105, 105, 105, 0.3);	
+}

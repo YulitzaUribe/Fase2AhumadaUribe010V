@@ -9,14 +9,19 @@ class Post(models.Model):
 	title = models.CharField(max_length=100)
 	content = models.TextField(max_length=1000)
 	date = models.DateField(auto_now=True)
-	image = models.ImageField()
+	image = models.ImageField(null=True, blank=True )
 	
 
 	class Meta:
-		ordering = ['id']
+		ordering = ['title']
+
+	def get_absolute_url(self):
+		return reverse('post-detail', args=[str(self.id)])
 
 	def __str__(self):
 		return self.title 
+
+	
 
 
 

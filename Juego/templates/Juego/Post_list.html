@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+	<div class="container_post">
+		<h1>Posts </h1>
+		
+		{% if post_list %}
+		<ul>
+			{% for Post in post_list %}
+			<li>
+				<a href="{{ Post.get_absolute_url }}">{{Post.title}}</a> ({{Post.date}})
+			</li>
+			{% endfor %}
+
+		</ul>
+
+		{% else %}
+			<p> No existen Post Aun. </p>
+		{% endif %}
+	</div>
+{% endblock %}

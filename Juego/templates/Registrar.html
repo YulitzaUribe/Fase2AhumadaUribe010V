@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+		{% block content %}
+			<form action="Gliord.html" class="register">
+				<p>Usuario: 
+				<input type="text" name="User" minlength="8" maxlength="20" required  >
+				</p>
+				<p>Correo Electronico:
+				<input type="text" name="email" maxlength="50" required="">
+				</p>
+				<p>Confirmar Correo Electronico:
+				<input type="text" name="confirmEmail" required>
+				</p>
+				<p>Contraseña:
+				<input type="password" name="Password" minlength="8" maxlength="20" required="">
+				</p>
+				<p>Confirmar Contraseña:</p>
+				<input type="password" name="confirmPassword" required="">
+				<input type="submit">
+			</form>
+			
+
+		{% endblock %}

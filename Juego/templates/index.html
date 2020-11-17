@@ -1,0 +1,45 @@
+{% extends "base_generic.html" %}
+{% block content %}
+
+	<div class="container">
+	    <div id="carousel1" class="carousel slide" data-ride="carousel">
+	      <ol class="carousel-indicators">
+	        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+	        <li data-target="#carousel1" data-slide-to="1"></li>
+	        <li data-target="#carousel1" data-slide-to="2"></li>
+	      </ol>
+
+	      <div class="carousel-inner">
+	        <div class="carousel-item active">
+	          	{% load static %}<img class="car-img" src="{% static 'img/bg.jpg' %}" alt="Escenarios de Fondo">
+	            
+	        </div>
+	        <div class="carousel-item">
+	            {% load static %}<img class="car-img" src="{% static 'img/pj.jpg' %}" alt="Personajes">
+	            
+	        </div>
+	        <div class="carousel-item">
+	            {% load static %}<img class="car-img" src="{% static 'img/history.png' %}" alt="Historia">
+	            
+	        </div>
+	      </div>
+
+	      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+	        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	        <span class="sr-only">Previous</span>
+	      </a>
+	      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+	        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	        <span class="sr-only">Next</span>
+	      </a>
+	    </div>
+
+	    <div id="Parrafo" class="Introduction">
+	    	<p>
+	    		Gliord es un juego RPG de plataformas en el que tu tomas las decisiones, aventurate en una historia en la que tu eres la protagonista.
+	    		Aventurate en un mundo de Sueños y Fantasias, y conoce nuevos amigos y enemigos, decide como interactuaras con cada uno y salva Gliord, el mundo de los sueños de su tormento eterno.
+	    	</p>
+	    </div>
+	</div>
+
+{% endblock %}
