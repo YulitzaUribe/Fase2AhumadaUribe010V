@@ -28,6 +28,7 @@ from django.views.generic.edit import CreateView,UpdateView,DeleteView
 
 class PostListView(generic.ListView):
 	model = Post
+	paginate_by= 10
 
 class PostDetailView(generic.DetailView):
 	model = Post

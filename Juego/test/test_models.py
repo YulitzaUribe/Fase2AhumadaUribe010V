@@ -9,24 +9,24 @@ class PostModelTest(TestCase):
 
 	def test_title_label(self):
 		post=Post.objects.get(id='44fc2b9d-2b04-45cb-af8a-c4601527b156')
-		field_label = post.meta.get_field('title').verbose_name
+		field_label = post._meta.get_field('title').verbose_name
 		self.assertEquals(field_label,'title')
 
 	def test_content_label(self):
 		post=Post.objects.get(id='44fc2b9d-2b04-45cb-af8a-c4601527b156')
-		field_label = post.meta.get_field('content').verbose_name
-		self.assertEquals(field_label,'title')
+		field_label = post._meta.get_field('content').verbose_name
+		self.assertEquals(field_label,'content')
 
 	def test_title_max_length(self):
 		post=Post.objects.get(id='44fc2b9d-2b04-45cb-af8a-c4601527b156')
-		field_label = post.meta.get_field('title').max_lenght
-		self.assertEquals(max_lenght,100)
+		max_length = post._meta.get_field('title').max_length
+		self.assertEquals(max_length,100)
 
 	def test_content_max_length(self):
 		post=Post.objects.get(id='44fc2b9d-2b04-45cb-af8a-c4601527b156')
-		field_label = post.meta.get_field('content').max_lenght
-		self.assertEquals(max_lenght,1000)
+		max_length = post._meta.get_field('content').max_length
+		self.assertEquals(max_length,1000)
 
 	def test_get_absolute_url(self):
-        post=Post.objects.get(id='44fc2b9d-2b04-45cb-af8a-c4601527b156')
-        self.assertEquals(post.get_absolute_url(), '/Juego/posts/44fc2b9d-2b04-45cb-af8a-c4601527b156')
+		post=Post.objects.get(id='44fc2b9d-2b04-45cb-af8a-c4601527b156')
+		self.assertEquals(post.get_absolute_url(), '/Juego/posts/44fc2b9d-2b04-45cb-af8a-c4601527b156')

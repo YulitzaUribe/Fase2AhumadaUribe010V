@@ -7,7 +7,7 @@ urlpatterns=[
 	path('Registrar/',views.Registrar,name='Registrar'),
 	path('posts/',views.PostListView.as_view(),name='posts'),
 	path('posts/<str:pk>',views.PostDetailView.as_view(), name='post-detail'),
-
+	path('posts/create/', views.PostCreate.as_view(),name='post_create'),
 ]
 
 urlpatterns += [
